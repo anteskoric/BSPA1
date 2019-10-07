@@ -1,5 +1,5 @@
 #!/bin/bash
-# <Changes the name of given directory>
+# <Changes the name of all files in given directory>
 # <Ante Skoric and Timo Quednau>
 # <06.10.2019>
 
