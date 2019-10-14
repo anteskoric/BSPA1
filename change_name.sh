@@ -1,5 +1,5 @@
 #!/bin/bash
-# <Changes the name of all files in given directory>
+# <Changes the name of given directory>
 # <Ante Skoric and Timo Quednau>
 # <06.10.2019>
 
@@ -20,11 +20,11 @@ if [ $# -gt 3 ]; then
 fi
 
 cd $1
-for file in $1
-    echo mv "$file" "${file}$2";
-ne
 
+for file in *;
+do
+    mv "$file" "${file}$2";
+done
 
+#---------------------- end ----------------------------------
 exit 0
-
-# ---------------------- end ---------------------------------
