@@ -23,7 +23,9 @@ cd $1
 
 for file in *;
 do
-    mv "$file" "${file}$2";
+  extension="${file##*.}"
+  filename="${file%.*}"
+  mv "$file" "$filename$2.$extension";
 done
 
 #---------------------- end ----------------------------------
